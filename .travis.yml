@@ -1,0 +1,12 @@
+# Travis.ci file https://docs.travis-ci.com/user/tutorial/
+# Continous integration
+
+language: cpp
+
+
+cmake CMakeLists.txt
+
+make
+
+./catch_example
+

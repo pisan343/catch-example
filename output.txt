@@ -1,0 +1,399 @@
+Tue Jan  1 07:09:14 PST 2019
+*** Compiling
+*** cpplint
+Done processing factorialcatch.cpp
+Done processing main.cpp
+Done processing rational.cpp
+Done processing rationalcatch.cpp
+Done processing vectorcatch.cpp
+Done processing rational.h
+*** cppcheck
+Checking factorialcatch.cpp ...
+[factorialcatch.cpp:0]: (information) Too many #ifdef configurations - cppcheck only checks 12 of 83 configurations. Use --force to check all configurations.
+[catch.hpp:2063]: (error) failed to expand 'REQUIRE', Invalid ## usage when expanding 'INTERNAL_CATCH_TEST'.
+Checking factorialcatch.cpp: CATCH_ARC_ENABLED=0;CATCH_CONFIG_IMPL_ONLY;__OBJC__...
+Checking factorialcatch.cpp: CATCH_CONFIG_COUNTER;CATCH_CONFIG_NO_COUNTER;CATCH_CONFIG_IMPL_ONLY...
+Checking factorialcatch.cpp: CATCH_CONFIG_CPP11_TO_STRING;CATCH_CONFIG_NO_CPP11_TO_STRING;CATCH_CONFIG_IMPL_ONLY...
+Checking factorialcatch.cpp: CATCH_CONFIG_CPP17_STRING_VIEW;CATCH_CONFIG_NO_CPP17_STRING_VIEW;CATCH_CONFIG_IMPL_ONLY...
+Checking factorialcatch.cpp: CATCH_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS;CATCH_CONFIG_NO_CPP17_UNCAUGHT_EXCEPTIONS;CATCH_CONFIG_IMPL_ONLY...
+Checking factorialcatch.cpp: CATCH_CONFIG_CPP17_VARIANT;CATCH_CONFIG_IMPL_ONLY...
+Checking factorialcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_DISABLE_MATCHERS;CATCH_CONFIG_IMPL_ONLY...
+Checking factorialcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_DISABLE_MATCHERS;CATCH_CONFIG_IMPL_ONLY;CATCH_CONFIG_PREFIX_ALL...
+Checking factorialcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_DISABLE_STRINGIFICATION;CATCH_CONFIG_IMPL_ONLY...
+Checking factorialcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_FAST_COMPILE;CATCH_CONFIG_IMPL_ONLY...
+Checking factorialcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_IMPL_ONLY...
+Checking factorialcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_IMPL_ONLY;CATCH_CONFIG_PREFIX_ALL...
+1/6 files checked 4% done
+Checking main.cpp ...
+[main.cpp:0]: (information) Too many #ifdef configurations - cppcheck only checks 12 of 81 configurations. Use --force to check all configurations.
+[catch.hpp:731] -> [catch.hpp:734]: (style, inconclusive) Function 'makeTestInvoker' argument 1 names different: declaration 'testAsFunction' definition 'testAsMethod'.
+[catch.hpp:4759] -> [catch.hpp:7732]: (style, inconclusive) Function 'Colour' argument 1 names different: declaration 'other' definition 'rhs'.
+[catch.hpp:4760] -> [catch.hpp:7736]: (style, inconclusive) Function 'operator=' argument 1 names different: declaration 'other' definition 'rhs'.
+[catch.hpp:3537] -> [catch.hpp:11054]: (style, inconclusive) Function 'makeTestCase' argument 1 names different: declaration 'testCase' definition '_testCase'.
+[catch.hpp:3538] -> [catch.hpp:11055]: (style, inconclusive) Function 'makeTestCase' argument 2 names different: declaration 'className' definition '_className'.
+[catch.hpp:3540] -> [catch.hpp:11057]: (style, inconclusive) Function 'makeTestCase' argument 4 names different: declaration 'lineInfo' definition '_lineInfo'.
+[catch.hpp:6157] -> [catch.hpp:6068]: (style) Local variable width shadows outer function
+[catch.hpp:1471] -> [catch.hpp:10795]: (style) Local variable end shadows outer function
+[catch.hpp:1471] -> [catch.hpp:11821]: (style) Local variable end shadows outer function
+[catch.hpp:10909]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[catch.hpp:10911]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[catch.hpp:10913]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[catch.hpp:9393]: (style) The class 'TestRegistry' does not have a constructor although it has private member variables.
+[catch.hpp:6838]: (style) Unused private function: 'ExeName::makeRef'
+[catch.hpp:6846]: (performance) Variable 'm_ref' is assigned in constructor body. Consider performing initialization in initialization list.
+[catch.hpp:6851]: (performance) Variable 'm_ref' is assigned in constructor body. Consider performing initialization in initialization list.
+[catch.hpp:995]: (style, inconclusive) Technically the member function 'Catch::ReusableStringStream::get' can be const.
+[catch.hpp:5755] -> [catch.hpp:1947]: (performance, inconclusive) Technically the member function 'Catch::AssertionHandler::allowThrows' can be static (but you may consider moving to unnamed namespace).
+[catch.hpp:2488]: (style, inconclusive) Technically the member function 'Catch::Detail::Approx::operator()' can be const.
+[catch.hpp:10027] -> [catch.hpp:5664]: (style, inconclusive) Technically the member function 'Catch::RunContext::invokeActiveTestCase' can be const.
+[catch.hpp:10411] -> [catch.hpp:10214]: (performance, inconclusive) Technically the member function 'Catch::Session::libIdentify' can be static (but you may consider moving to unnamed namespace).
+[catch.hpp:10637]: (style, inconclusive) Technically the member function 'Catch::detail::::OutputDebugWriter::operator()' can be const.
+[catch.hpp:546]: (style) Class 'StringRef' has a constructor with 1 argument that is not explicit.
+[catch.hpp:553]: (style) Class 'StringRef' has a constructor with 1 argument that is not explicit.
+[catch.hpp:723]: (style) Class 'TestInvokerAsMethod' has a constructor with 1 argument that is not explicit.
+[catch.hpp:1897]: (style) Class 'LazyExpression' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2268]: (style) Class 'Section' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2314]: (style) Class 'BenchmarkLooper' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2445]: (style) Class 'ExceptionTranslatorRegistrar' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2423]: (style) Class 'ExceptionTranslator' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2886]: (style) Struct 'EqualsMatcher' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2890]: (style) Struct 'ContainsMatcher' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2894]: (style) Struct 'StartsWithMatcher' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2898]: (style) Struct 'EndsWithMatcher' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2960]: (style) Struct 'ContainsElementMatcher' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2981]: (style) Struct 'ContainsMatcher' has a constructor with 1 argument that is not explicit.
+[catch.hpp:3011]: (style) Struct 'EqualsMatcher' has a constructor with 1 argument that is not explicit.
+[catch.hpp:3033]: (style) Struct 'UnorderedEqualsMatcher' has a constructor with 1 argument that is not explicit.
+[catch.hpp:3183]: (style) Class 'GeneratorBase' has a constructor with 1 argument that is not explicit.
+[catch.hpp:3258]: (style) Class 'SingleValueGenerator' has a constructor with 1 argument that is not explicit.
+[catch.hpp:3270]: (style) Class 'FixedValuesGenerator' has a constructor with 1 argument that is not explicit.
+[catch.hpp:3829]: (style) Class 'NamePattern' has a constructor with 1 argument that is not explicit.
+[catch.hpp:3838]: (style) Class 'TagPattern' has a constructor with 1 argument that is not explicit.
+[catch.hpp:3847]: (style) Class 'ExcludedPattern' has a constructor with 1 argument that is not explicit.
+[catch.hpp:3910]: (style) Class 'TestSpecParser' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4081]: (style) Class 'Config' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4284]: (style) Struct 'TestRunInfo' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4354]: (style) Struct 'TestGroupStats' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4705]: (style) Struct 'TestEventListenerBase' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4758]: (style) Struct 'Colour' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4888]: (style) Struct 'ConsoleReporter' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4988]: (style) Class 'XmlWriter' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4969]: (style) Class 'ScopedElement' has a constructor with 1 argument that is not explicit.
+[catch.hpp:5041]: (style) Class 'JunitReporter' has a constructor with 1 argument that is not explicit.
+[catch.hpp:5089]: (style) Class 'XmlReporter' has a constructor with 1 argument that is not explicit.
+[catch.hpp:6369]: (style) Class 'Args' has a constructor with 1 argument that is not explicit.
+[catch.hpp:6494]: (style) Class 'ResultValueBase' has a constructor with 1 argument that is not explicit.
+[catch.hpp:7011]: (style) Struct 'Help' has a constructor with 1 argument that is not explicit.
+[catch.hpp:8767]: (style) Struct 'Converter < float >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:8776]: (style) Struct 'Converter < double >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:9415]: (style) Class 'TestInvokerAsFunction' has a constructor with 1 argument that is not explicit.
+[catch.hpp:10647]: (style) Class 'FileStream' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4569]: (style) Struct 'BySectionInfo' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4471]: (style) Struct 'StreamingReporterBase < TestEventListenerBase >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4471]: (style) Struct 'StreamingReporterBase < CompactReporter >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4471]: (style) Struct 'StreamingReporterBase < ConsoleReporter >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4471]: (style) Struct 'StreamingReporterBase < XmlReporter >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4187]: (style) Class 'Option < AssertionResult >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4187]: (style) Class 'Option < unsigned long >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4187]: (style) Class 'Option < TestRunInfo >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4187]: (style) Class 'Option < GroupInfo >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:4187]: (style) Class 'Option < TestCaseInfo >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2732]: (style) Struct 'MatchNotOf < double >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2732]: (style) Struct 'MatchNotOf < T >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:2732]: (style) Struct 'MatchNotOf < std :: string >' has a constructor with 1 argument that is not explicit.
+[catch.hpp:1836] -> [catch.hpp:5637]: (style) The function 'acquireGeneratorTracker' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6651] -> [catch.hpp:6658]: (style) The function 'isFlag' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6650] -> [catch.hpp:6678]: (style) The function 'isContainer' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6654] -> [catch.hpp:6680]: (style) The function 'setValue' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6657] -> [catch.hpp:6694]: (style) The function 'setFlag' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6657] -> [catch.hpp:6749]: (style) The function 'setFlag' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6762] -> [catch.hpp:6855]: (style) The function 'parse' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6762] -> [catch.hpp:6879]: (style) The function 'parse' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6762] -> [catch.hpp:6956]: (style) The function 'parse' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6761] -> [catch.hpp:6992]: (style) The function 'validate' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6761] -> [catch.hpp:7117]: (style) The function 'validate' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6762] -> [catch.hpp:7133]: (style) The function 'parse' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:7556] -> [catch.hpp:7560]: (style) The function 'use' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6763] -> [catch.hpp:6823]: (style) The function 'cardinality' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6654] -> [catch.hpp:6735]: (style) The function 'setValue' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:6654] -> [catch.hpp:6667]: (style) The function 'setValue' overrides a function in a base class but is not marked with a 'override' specifier.
+[catch.hpp:548]: (performance, inconclusive) Function parameter 'size' should be passed by const reference.
+[catch.hpp:6438]: (performance, inconclusive) Function parameter 'it' should be passed by const reference.
+[catch.hpp:6438]: (performance, inconclusive) Function parameter 'itEnd' should be passed by const reference.
+[catch.hpp:6956]: (performance) Function parameter 'std' should be passed by const reference.
+[catch.hpp:10884]: (performance, inconclusive) Function parameter 'start' should be passed by const reference.
+[catch.hpp:10884]: (performance, inconclusive) Function parameter 'size' should be passed by const reference.
+[catch.hpp:2964]: (style) Consider using std::any_of algorithm instead of a raw loop.
+[catch.hpp:2990]: (style) Consider using std::any_of algorithm instead of a raw loop.
+[catch.hpp:6223]: (style) Consider using std::transform algorithm instead of a raw loop.
+[catch.hpp:6239]: (style) Consider using std::transform algorithm instead of a raw loop.
+[catch.hpp:6948]: (style) Consider using std::any_of algorithm instead of a raw loop.
+[catch.hpp:7099]: (style) Consider using std::accumulate algorithm instead of a raw loop.
+[catch.hpp:8178]: (style) Consider using std::find_if algorithm instead of a raw loop.
+[catch.hpp:8618]: (style) Consider using std::accumulate algorithm instead of a raw loop.
+[catch.hpp:8662]: (style) Consider using std::accumulate algorithm instead of a raw loop.
+[catch.hpp:11142]: (style) Consider using std::accumulate algorithm instead of a raw loop.
+[catch.hpp:11227]: (style) Consider using std::copy_if algorithm instead of a raw loop.
+[catch.hpp:11614]: (style) Consider using std::any_of algorithm instead of a raw loop.
+[catch.hpp:11626]: (style) Consider using std::any_of algorithm instead of a raw loop.
+[catch.hpp:11911]: (style) Consider using std::accumulate algorithm instead of a raw loop.
+Checking main.cpp: CATCH_ARC_ENABLED=0;CATCH_CONFIG_IMPL_ONLY;__OBJC__...
+[catch.hpp:14014]: (error) syntax error
+Checking main.cpp: CATCH_ARC_ENABLED=0;__OBJC__...
+[catch.hpp:1021]: (error) syntax error
+Checking main.cpp: CATCH_CONFIG_COLOUR_ANSI;CATCH_CONFIG_COLOUR_WINDOWS...
+Checking main.cpp: CATCH_CONFIG_COUNTER;CATCH_CONFIG_NO_COUNTER;CATCH_CONFIG_IMPL_ONLY...
+[catch.hpp:8230] -> [catch.hpp:5573]: (performance, inconclusive) Technically the member function 'Catch::FatalConditionHandler::reset' can be static (but you may consider moving to unnamed namespace).
+Checking main.cpp: CATCH_CONFIG_CPP11_TO_STRING;CATCH_CONFIG_NO_CPP11_TO_STRING;CATCH_CONFIG_IMPL_ONLY...
+Checking main.cpp: CATCH_CONFIG_CPP17_STRING_VIEW;CATCH_CONFIG_NO_CPP17_STRING_VIEW;CATCH_CONFIG_IMPL_ONLY...
+Checking main.cpp: CATCH_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS;CATCH_CONFIG_NO_CPP17_UNCAUGHT_EXCEPTIONS;CATCH_CONFIG_IMPL_ONLY...
+Checking main.cpp: CATCH_CONFIG_CPP17_VARIANT;CATCH_CONFIG_IMPL_ONLY...
+Checking main.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_DISABLE_MATCHERS;CATCH_CONFIG_IMPL_ONLY...
+Checking main.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_DISABLE_MATCHERS;CATCH_CONFIG_IMPL_ONLY;CATCH_CONFIG_PREFIX_ALL...
+Checking main.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_DISABLE_STRINGIFICATION;CATCH_CONFIG_IMPL_ONLY...
+2/6 files checked 14% done
+Checking rational.cpp ...
+3/6 files checked 52% done
+Checking rational.h ...
+4/6 files checked 74% done
+Checking rationalcatch.cpp ...
+[rationalcatch.cpp:0]: (information) Too many #ifdef configurations - cppcheck only checks 12 of 83 configurations. Use --force to check all configurations.
+Checking rationalcatch.cpp: CATCH_ARC_ENABLED=0;CATCH_CONFIG_IMPL_ONLY;__OBJC__...
+Checking rationalcatch.cpp: CATCH_CONFIG_COUNTER;CATCH_CONFIG_NO_COUNTER;CATCH_CONFIG_IMPL_ONLY...
+Checking rationalcatch.cpp: CATCH_CONFIG_CPP11_TO_STRING;CATCH_CONFIG_NO_CPP11_TO_STRING;CATCH_CONFIG_IMPL_ONLY...
+Checking rationalcatch.cpp: CATCH_CONFIG_CPP17_STRING_VIEW;CATCH_CONFIG_NO_CPP17_STRING_VIEW;CATCH_CONFIG_IMPL_ONLY...
+Checking rationalcatch.cpp: CATCH_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS;CATCH_CONFIG_NO_CPP17_UNCAUGHT_EXCEPTIONS;CATCH_CONFIG_IMPL_ONLY...
+Checking rationalcatch.cpp: CATCH_CONFIG_CPP17_VARIANT;CATCH_CONFIG_IMPL_ONLY...
+Checking rationalcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_DISABLE_MATCHERS;CATCH_CONFIG_IMPL_ONLY...
+Checking rationalcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_DISABLE_MATCHERS;CATCH_CONFIG_IMPL_ONLY;CATCH_CONFIG_PREFIX_ALL...
+Checking rationalcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_DISABLE_STRINGIFICATION;CATCH_CONFIG_IMPL_ONLY...
+Checking rationalcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_FAST_COMPILE;CATCH_CONFIG_IMPL_ONLY...
+Checking rationalcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_IMPL_ONLY...
+Checking rationalcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_IMPL_ONLY;CATCH_CONFIG_PREFIX_ALL...
+5/6 files checked 88% done
+Checking vectorcatch.cpp ...
+[vectorcatch.cpp:0]: (information) Too many #ifdef configurations - cppcheck only checks 12 of 83 configurations. Use --force to check all configurations.
+Checking vectorcatch.cpp: CATCH_ARC_ENABLED=0;CATCH_CONFIG_IMPL_ONLY;__OBJC__...
+Checking vectorcatch.cpp: CATCH_CONFIG_COUNTER;CATCH_CONFIG_NO_COUNTER;CATCH_CONFIG_IMPL_ONLY...
+Checking vectorcatch.cpp: CATCH_CONFIG_CPP11_TO_STRING;CATCH_CONFIG_NO_CPP11_TO_STRING;CATCH_CONFIG_IMPL_ONLY...
+Checking vectorcatch.cpp: CATCH_CONFIG_CPP17_STRING_VIEW;CATCH_CONFIG_NO_CPP17_STRING_VIEW;CATCH_CONFIG_IMPL_ONLY...
+Checking vectorcatch.cpp: CATCH_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS;CATCH_CONFIG_NO_CPP17_UNCAUGHT_EXCEPTIONS;CATCH_CONFIG_IMPL_ONLY...
+Checking vectorcatch.cpp: CATCH_CONFIG_CPP17_VARIANT;CATCH_CONFIG_IMPL_ONLY...
+Checking vectorcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_DISABLE_MATCHERS;CATCH_CONFIG_IMPL_ONLY...
+Checking vectorcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_DISABLE_MATCHERS;CATCH_CONFIG_IMPL_ONLY;CATCH_CONFIG_PREFIX_ALL...
+Checking vectorcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_DISABLE_STRINGIFICATION;CATCH_CONFIG_IMPL_ONLY...
+Checking vectorcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_FAST_COMPILE;CATCH_CONFIG_IMPL_ONLY...
+Checking vectorcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_IMPL_ONLY...
+Checking vectorcatch.cpp: CATCH_CONFIG_DISABLE;CATCH_CONFIG_IMPL_ONLY;CATCH_CONFIG_PREFIX_ALL...
+6/6 files checked 100% done
+*** running
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+myprogram.exe is a Catch v2.5.0 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+f1: Factorials are computed
+-------------------------------------------------------------------------------
+factorialcatch.cpp:17
+...............................................................................
+
+factorialcatch.cpp:23: FAILED:
+  REQUIRE( Factorial(2) == -1 )
+with expansion:
+  2 == -1
+
+-------------------------------------------------------------------------------
+f2: Factorials are computed
+-------------------------------------------------------------------------------
+factorialcatch.cpp:27
+...............................................................................
+
+factorialcatch.cpp:30: FAILED:
+  REQUIRE( Factorial(3) == -1 )
+with expansion:
+  6 == -1
+
+Creating rational with 0 and 1
+Creating rational with 3 and 1
+Creating rational with 3 and 5
+Creating rational with 30 and 50
+Creating rational with 3 and 1
+Creating rational with 3 and 5
+Creating rational with 0 and 1
+Creating rational with 1 and 2
+Creating rational with 2 and 3
+Creating rational with 7 and 6
+Creating rational with 1 and 2
+Creating rational with 2 and 3
+Creating rational with -1 and 6
+Creating rational with 1 and 2
+Creating rational with 2 and 3
+Creating rational with 2 and 6
+Creating rational with 1 and 2
+Creating rational with 2 and 3
+Creating rational with 3 and 4
+Creating rational with 1 and 2
+Creating rational with 2 and 3
+Creating rational with 20 and 30
+Creating rational with 12 and 5
+Creating rational with 2 and 3
+Creating rational with 4 and 6
+Inside int() with numerator = 12 and denom = 5
+Inside int() with numerator = 2 and denom = 3
+Creating rational with 0 and 9
+Creating rational with 12 and 0
+-------------------------------------------------------------------------------
+v1: vectors can be sized and resized
+  reserving smaller does not change size or capacity
+-------------------------------------------------------------------------------
+vectorcatch.cpp:39
+...............................................................................
+
+vectorcatch.cpp:45: FAILED:
+  REQUIRE( v.size() == -1 )
+with expansion:
+  5 == -1
+
+-------------------------------------------------------------------------------
+Scenario: v2: vectors can be sized and resized
+      Given: A vector with some items
+       When: less capacity is reserved
+       Then: neither size nor capacity are changed
+-------------------------------------------------------------------------------
+vectorcatch.cpp:81
+...............................................................................
+
+vectorcatch.cpp:85: FAILED:
+  REQUIRE( v.size() == -1 )
+with expansion:
+  5 == -1
+
+===============================================================================
+test cases:  9 |  5 passed | 4 failed
+assertions: 79 | 75 passed | 4 failed
+
+*** running with valgrind
+==25754== Memcheck, a memory error detector
+==25754== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25754== Using Valgrind-3.14.0.GIT and LibVEX; rerun with -h for copyright info
+==25754== Command: ./myprogram.exe
+==25754== 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+myprogram.exe is a Catch v2.5.0 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+f1: Factorials are computed
+-------------------------------------------------------------------------------
+factorialcatch.cpp:17
+...............................................................................
+
+factorialcatch.cpp:23: FAILED:
+  REQUIRE( Factorial(2) == -1 )
+with expansion:
+  2 == -1
+
+-------------------------------------------------------------------------------
+f2: Factorials are computed
+-------------------------------------------------------------------------------
+factorialcatch.cpp:27
+...............................................................................
+
+factorialcatch.cpp:30: FAILED:
+  REQUIRE( Factorial(3) == -1 )
+with expansion:
+  6 == -1
+
+Creating rational with 0 and 1
+Creating rational with 3 and 1
+Creating rational with 3 and 5
+Creating rational with 30 and 50
+Creating rational with 3 and 1
+Creating rational with 3 and 5
+Creating rational with 0 and 1
+Creating rational with 1 and 2
+Creating rational with 2 and 3
+Creating rational with 7 and 6
+Creating rational with 1 and 2
+Creating rational with 2 and 3
+Creating rational with -1 and 6
+Creating rational with 1 and 2
+Creating rational with 2 and 3
+Creating rational with 2 and 6
+Creating rational with 1 and 2
+Creating rational with 2 and 3
+Creating rational with 3 and 4
+Creating rational with 1 and 2
+Creating rational with 2 and 3
+Creating rational with 20 and 30
+Creating rational with 12 and 5
+Creating rational with 2 and 3
+Creating rational with 4 and 6
+Inside int() with numerator = 12 and denom = 5
+Inside int() with numerator = 2 and denom = 3
+Creating rational with 0 and 9
+Creating rational with 12 and 0
+-------------------------------------------------------------------------------
+v1: vectors can be sized and resized
+  reserving smaller does not change size or capacity
+-------------------------------------------------------------------------------
+vectorcatch.cpp:39
+...............................................................................
+
+vectorcatch.cpp:45: FAILED:
+  REQUIRE( v.size() == -1 )
+with expansion:
+  5 == -1
+
+-------------------------------------------------------------------------------
+Scenario: v2: vectors can be sized and resized
+      Given: A vector with some items
+       When: less capacity is reserved
+       Then: neither size nor capacity are changed
+-------------------------------------------------------------------------------
+vectorcatch.cpp:81
+...............................................................................
+
+vectorcatch.cpp:85: FAILED:
+  REQUIRE( v.size() == -1 )
+with expansion:
+  5 == -1
+
+===============================================================================
+test cases:  9 |  5 passed | 4 failed
+assertions: 79 | 75 passed | 4 failed
+
+==25754== 
+==25754== HEAP SUMMARY:
+==25754==     in use at exit: 95,187 bytes in 164 blocks
+==25754==   total heap usage: 2,569 allocs, 2,405 frees, 383,373 bytes allocated
+==25754== 
+==25754== 16 bytes in 1 blocks are definitely lost in loss record 3 of 44
+==25754==    at 0x10061A9B6: malloc (in /Users/pisan/homebrew/Cellar/valgrind/HEAD-074de23/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==25754==    by 0x100635CED: __cxa_get_globals (in /Users/pisan/homebrew/Cellar/gcc/7.2.0/lib/gcc/7/libstdc++.6.dylib)
+==25754==    by 0x100636D91: __cxa_throw (in /Users/pisan/homebrew/Cellar/gcc/7.2.0/lib/gcc/7/libstdc++.6.dylib)
+==25754==    by 0x100004001: Catch::AssertionHandler::complete() (catch.hpp:5771)
+==25754==    by 0x100001DFC: ____C_A_T_C_H____T_E_S_T____0() (factorialcatch.cpp:23)
+==25754==    by 0x100022453: Catch::TestInvokerAsFunction::invoke() const (catch.hpp:11262)
+==25754==    by 0x100021AE4: Catch::TestCase::invoke() const (catch.hpp:11163)
+==25754==    by 0x10001B448: Catch::RunContext::invokeActiveTestCase() (catch.hpp:10029)
+==25754==    by 0x10001B1AC: Catch::RunContext::runCurrentTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (catch.hpp:10003)
+==25754==    by 0x100019CA5: Catch::RunContext::runTest(Catch::TestCase const&) (catch.hpp:9779)
+==25754==    by 0x10001CA03: Catch::(anonymous namespace)::runTests(std::shared_ptr<Catch::Config> const&) (catch.hpp:10326)
+==25754==    by 0x10001E71D: Catch::Session::runInternal() (catch.hpp:10519)
+==25754== 
+==25754== LEAK SUMMARY:
+==25754==    definitely lost: 16 bytes in 1 blocks
+==25754==    indirectly lost: 0 bytes in 0 blocks
+==25754==      possibly lost: 72 bytes in 3 blocks
+==25754==    still reachable: 77,000 bytes in 8 blocks
+==25754==         suppressed: 18,099 bytes in 152 blocks
+==25754== Reachable blocks (those to which a pointer was found) are not shown.
+==25754== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==25754== 
+==25754== For counts of detected and suppressed errors, rerun with: -v
+==25754== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 8 from 8)
+*** cleaning up
+Tue Jan  1 07:09:40 PST 2019
