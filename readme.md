@@ -5,15 +5,19 @@ Time spent: 200 hours or maybe more
 Compiled and tested on CSS Linux Lab: Yes
 
 > g++ -std=c++14 -Wall -Wextra -Wno-sign-compare *.cpp -o catch-example.exe
+
 No warnings
 
 > cpplint *.cpp *.h
+
 No warnings
 
 > cppcheck --enable=all --inconclusive --language=c++ --std=posix --suppress=missingIncludeSystem *.cpp *.h
+
 No warnings
 
 > valgrind ./catch-example.exe
+
 "definitely lost: 16 bytes"
 
 
