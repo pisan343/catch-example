@@ -26,13 +26,14 @@ Implemented x, y, z, but did not have time for w, r
 Program gives the following error, cannot find source or fix it
             blah blah blah
 
-How will I improve next time:
-    - Start assignment early
-    - Build simpler test cases
-    - Compile and test on CSS Linux lab earlier
-    - use valgrind more frequently
-    - integrate cpplint with CLion
-    - My code is perfect, I rocked this assignment!
+Improvements for next time:
+
+- Start assignment early
+- Build simpler test cases
+- Compile and test on CSS Linux lab earlier
+- use valgrind more frequently
+- integrate cpplint with CLion
+- My code is perfect, I rocked this assignment!
 
 
 

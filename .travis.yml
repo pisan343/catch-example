@@ -3,10 +3,8 @@
 
 language: cpp
 
-
-cmake CMakeLists.txt
-
-make
-
-./catch_example
+script:
+    - cmake CMakeLists.txt
+    - make
+    - ./catch_example
 
