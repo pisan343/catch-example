@@ -6,6 +6,8 @@
  * @date 7 Dec 2018
  */
 
+#ifdef USE_CATCH
+
 #include <sstream>
 #include "catch.hpp"
 #include "rational.h"
@@ -122,4 +124,4 @@ TEST_CASE("R extras") {
   REQUIRE(out.str() == "\nDIVIDE BY ZERO ERROR!!!\n");
 }
 
-
+#endif  // USE_CATCH

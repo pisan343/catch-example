@@ -1,7 +1,9 @@
 # Catch Example
 
 Expected Mark: 80
+
 Time spent: 200 hours or maybe more
+
 Compiled and tested on CSS Linux Lab: Yes
 
 > g++ -std=c++14 -Wall -Wextra -Wno-sign-compare *.cpp -o catch-example.exe
